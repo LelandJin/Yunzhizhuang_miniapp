@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/demo01/demo01",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -15,11 +16,30 @@
     "pages/im/room/room"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "backgroundColor": "#062730",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#0094FF",
+    "navigationBarTitleText": "云智装市场部",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "iconPath",
+        "selectedIconPath": "selectedIconPath"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "页2",
+        "iconPath": "iconPath",
+        "selectedIconPath": "selectedIconPath"
+      }
+    ],
+    "selectedColor": "#0094FF",
+    "backgroundColor": "#ff5533"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
