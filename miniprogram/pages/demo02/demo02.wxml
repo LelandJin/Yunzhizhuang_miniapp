@@ -1,0 +1,91 @@
+<!--pages/demo02/demo02.wxml-->
+<!--
+  1 text = span; 行内元素 不换行
+  1 view = span; 块级元素 换行
+-->
+
+<!--use msg string defined in demo02.js data{}-->
+<view>{{msg}}</view>
+
+<!--use num defined in demo02.js data{}-->
+<view>{{num}}</view>
+
+<!--bool-->
+<view>女？：{{isGirl}}</view>
+
+<!--object-->
+<view>年龄：{{person.age}}</view>
+<view>身高：{{person.height}}</view>
+<view>体重：{{person.weight}}</view>
+<view>姓名: {{person.name}}</view>
+
+<!--在标签的属性中使用-->
+<view data-num="{{num}}">
+  自定义属性
+</view>
+
+<view>
+  <checkbox checked="{{ischecked}}"></checkbox>
+</view>
+
+<!--运算=>表达式-->
+<view>{{1+1}}</view> <!-- should be 2-->
+<view>{{'1'+'1'}}</view> <!-- should be 11-->
+<view>{{'1'+'1'}}</view> <!-- should be 11-->
+<view>11 % 2 是 {{11%2 === 0 ? '偶数' :'奇数'}}</view> <!-- should be 11-->
+
+<!--列表循环 wx-for-->
+
+<view>
+  <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    索引: {{index}}
+    --
+    值: {{item.name}}
+  </view>
+</view>
+<!--对象循环 wx-for-->
+
+<view>
+  <view>对象循环</view>
+  <view wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
+
+    索引: {{key}}
+    --
+    值: {{value}}
+
+  </view>
+</view>
+
+<!--
+  Block 
+  1. 占位符标签
+  2. 写代码的时候看得见
+  3. 页面渲染时会被小程序移除
+-->
+<view>
+  <block wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="age">
+    索引: {{key}}
+    --
+    值: {{value}}
+  </block>
+</view>
+
+<!--
+  11 条件渲染
+    1 wx:if="{{true/false}}"
+    2 hidden
+      1 在标签上直接加入属性 hidden
+      2 <view hidden = "{{true}}">
+-->
+<view>
+  <view>条件渲染</view>
+  <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view>
+
+  <view wx:if="{{false}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view wx:else>3</view>
+  <view>---------------------------</view>
+  <view hidden = "{{true}}">hidden msg</view>
+
+</view>
