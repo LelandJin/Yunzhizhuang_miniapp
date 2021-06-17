@@ -20,27 +20,8 @@
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true,
     "navigationBarBackgroundColor": "#0094FF",
-    "navigationBarTitleText": "云智装市场部",
+    "navigationBarTitleText": "云智装客户端服务",
     "navigationBarTextStyle": "white"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "iconPath",
-        "selectedIconPath": "selectedIconPath"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "页2",
-        "iconPath": "iconPath",
-        "selectedIconPath": "selectedIconPath"
-      }
-    ],
-    "selectedColor": "#0094FF",
-    "backgroundColor": "#ff5533"
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "sitemapLocation": "sitemap.json"
 }

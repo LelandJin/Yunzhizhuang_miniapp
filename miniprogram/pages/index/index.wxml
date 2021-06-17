@@ -72,6 +72,13 @@
       <text>云调用</text>
     </navigator>
   </view>
+  
+  <!-- Demo1 -->
+  <view class="uploader">
+    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
+      <text>Demo1</text>
+    </navigator>
+  </view>
 
 
 </view>

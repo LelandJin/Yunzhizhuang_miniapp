@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#0094aa",
+  "navigationBarTitleText": "云智装客户端服务"
 }
